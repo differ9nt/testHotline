@@ -32,7 +32,7 @@ public class TestApp {
     public void search() throws IOException, InterruptedException {
 
         System.out.println("Title: " + driver.getTitle());
-        
+
         driver.findElement(By.id("searchbox")).sendKeys("iPhone 7");
         driver.findElement(By.id("doSearch")).click();
         driver.findElement(By.xpath("//a[contains(text(),'iPhone')]")).click();
